@@ -1,3 +1,25 @@
 .figure {
-	width: 200px;
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.width {
+	margin: 50px;
+}
+
+.action {
+	left: 5px;
+	position: absolute;
+}
+
+.panel-body {
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+h1 {
+	margin: 50px;
 }

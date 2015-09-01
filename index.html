@@ -1,25 +1,34 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="game.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="game.css">
 	<meta charset="UTF-8">
 	<title>The Object Game</title>
 </head>
+
 <body>
-    
-	<div class="panel panel-primary">
-		<div class="panel-heading">title</div>
+<h1>THE OBJECT GAME</h1>
+	<div class="panel panel-primary width">
+		<div class="panel-heading"></div>
 		<div class="panel-body">
 			<img class="figure" src="stickninja.png">
+			<img id="showSlap" class="figure action hide" src="slap.gif">
+			<img id="showPunch" class="figure action hide" src="punch.png">
+			<img id="showKick" class="figure action hide" src="kick.png">
+		</div>
+		<div class="panel-footer">
+			<div class="btn-group" role="group" aria-label="...">
+				<button type="button" class="btn btn-default" onclick="slap();">Slap</button>
+				<button type="button" class="btn btn-default" onclick="punch();">Punch</button>
+				<button type="button" class="btn btn-default" onclick="kick();">Kick</button>
+				<button type="button" class="btn btn-default" onclick="potion();"><i class="fa fa-flask"></i></button>
 			</div>
-			<div class="panel-footer">
-				<div class="btn-group" role="group" aria-label="...">
-				 <button type="button" class="btn btn-default">Slap</button>
-				  <button type="button" class="btn btn-default">Middle</button>
-				   <button type="button" class="btn btn-default">Right</button>
-					</div>
-				</div>
+		</div>
 	</div>
+	<script src="game.js"></script>
 </body>
+
 </html>
