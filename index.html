@@ -10,9 +10,16 @@
 </head>
 
 <body>
-<h1>THE OBJECT GAME</h1>
+	<h1>THE OBJECT GAME</h1>
 	<div class="panel panel-primary width">
-		<div class="panel-heading"></div>
+		<div class="panel-heading">
+			<div id="playerName"></div>
+			<div id="hits"></div>
+			<div class="progress" style="width: 200px;">
+				<div class="progress-bar progress-bar-success" role="progressbar" style="width: 100%;">
+				</div>
+			</div>
+		</div>
 		<div class="panel-body">
 			<img class="figure" src="stickninja.png">
 			<img id="showSlap" class="figure action hide" src="slap.gif">
@@ -25,6 +32,7 @@
 				<button type="button" class="btn btn-default" onclick="punch();">Punch</button>
 				<button type="button" class="btn btn-default" onclick="kick();">Kick</button>
 				<button type="button" class="btn btn-default" onclick="potion();"><i class="fa fa-flask"></i></button>
+				<button type="button" class="btn btn-default" onclick="reset();"><i class="fa fa-history"></i></button>
 			</div>
 		</div>
 	</div>
